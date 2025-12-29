@@ -5,20 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhutanese Physical Society - Vision, Mission, Objectives & Values</title>
     <style>
+        :root {
+            --primary: #0b3d91; /* Deep Blue */
+            --accent: #f2b705;  /* Gold */
+            --secondary: #f9f9f9;
+            --text: #333;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: var(--secondary);
+            color: var(--text);
         }
 
         header {
-            background-color: #0b3d91;
+            background-color: var(--primary);
             color: white;
             padding: 2rem;
             text-align: center;
+        }
+
+        header img {
+            max-width: 80px;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0.5rem;
+            margin: 0;
+            display: inline-flex;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .lang-switch {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .lang-switch button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .lang-switch button:hover {
+            background-color: var(--accent);
         }
 
         main {
@@ -28,15 +89,15 @@
         }
 
         section {
+            background: white;
+            padding: 2rem;
             margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         h1, h2, h3 {
-            color: #0b3d91;
-        }
-
-        p {
-            margin-bottom: 1rem;
+            color: var(--primary);
         }
 
         ul, ol {
@@ -53,30 +114,59 @@
 </head>
 <body>
 
-    <header>
-        <h1>Bhutanese Physical Society</h1>
-        <p>Advancing Physics for a Sustainable and Knowledge-Based Bhutan</p>
-    </header>
+<header>
+    <img src="assets/images/logo.svg" alt="Bhutanese Physical Society Logo">
+    <h1>Bhutanese Physical Society</h1>
+    <p>Advancing Physics for a Sustainable and Knowledge-Based Bhutan</p>
+</header>
 
-    <main>
-        <!-- Vision Section -->
-        <section id="vision">
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="lang-switch">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('dz')">རྫོང་ཁ</button>
+</div>
+
+<main>
+    <!-- Vision Section -->
+    <section id="vision">
+        <div class="lang-en">
             <h2>Vision</h2>
             <p>The Bhutanese Physical Society envisions a Bhutan where the understanding of nature through physics serves the well-being of people, the protection of the environment, and the prosperity of future generations.</p>
             <p>Rooted in Bhutan’s cultural values and the principles of Gross National Happiness, the Society seeks to advance physics education, research, and innovation in ways that are ethical, mindful, and aligned with national priorities.</p>
             <p>Through the responsible application of physics—particularly in renewable energy, climate resilience, and sustainable technologies—the Society aspires to support Bhutan’s transition toward a knowledge-based, environmentally harmonious, and self-reliant future, while fostering collaboration between scientists, educators, policymakers, and communities.</p>
-        </section>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>དམིགས་ཡུལ།</h2>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་ཤེས་ཡོན་གྱིས་ མི་དང་ཁོར་ཡུག་གི་བདེ་སྐྱིད་ལུ་ ཕན་པ་བསྐྲུན་པའི་འབྲུག་གཅིག་ལུ་ དམིགས་བསལ་འཛིན་ནི་ཨིན།</p>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ འབྲེལ་བ་དང་མི་དང་གཞུང་རྒྱུ་དང་བློ་གསལ་གནས་སྟངས་ལུ་ སློབ་གྲྭ་སློབ་མཁན་སྦྱོང་རིམ་དང་ རིག་གཞུང་འབྲེལ་སྡོད་གི་གནད་དོན་ལུ་ རིག་མཐུན་སྒྲིག་གཏོང་བ་ཨིན།</p>
+        </div>
+    </section>
 
-        <!-- Mission Section -->
-        <section id="mission">
+    <!-- Mission Section -->
+    <section id="mission">
+        <div class="lang-en">
             <h2>Mission</h2>
             <p>The mission of the Bhutanese Physical Society is to promote the study, teaching, and application of physics in Bhutan for the benefit of society and the natural environment.</p>
             <p>The Society works to strengthen physics education, support research and innovation, and encourage the responsible use of physics-based technologies—particularly in renewable energy, climate resilience, and sustainable systems.</p>
             <p>Through collaboration with educational institutions, government agencies, industry, and communities, the Society seeks to build national scientific capacity, nurture young physicists, and contribute evidence-based knowledge to national development in a manner consistent with Bhutan’s cultural values and the principles of Gross National Happiness.</p>
-        </section>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>ལས་ཀ</h2>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གྱི་རིག་གཞུང་སློབ་གྲྭ་དང་ འགན་འཁུར་དང་སྤྱོད་པའི་བརྩོན་ལག་སྦྱོང་རིམ་སྦེ་ རིག་གཞུང་ལུ་བསྐྱར་སྦྱོང་བ་ཨིན།</p>
+        </div>
+    </section>
 
-        <!-- Objectives Section -->
-        <section id="objectives">
+    <!-- Objectives Section -->
+    <section id="objectives">
+        <div class="lang-en">
             <h2>Objectives</h2>
             <ol>
                 <li>To promote physics education in Bhutan by supporting quality teaching, curriculum development, and learning resources at schools, colleges, and universities.</li>
@@ -87,81 +177,34 @@
                 <li>To promote the ethical and responsible application of physics in ways that respect Bhutan’s cultural values, environmental integrity, and the principles of Gross National Happiness.</li>
                 <li>To organize scientific activities such as lectures, workshops, conferences, and outreach programs to advance public understanding of physics and its role in society.</li>
             </ol>
-        </section>
-
-        <!-- Core Values Section -->
-        <section id="core-values">
-            <h2>Core Values & Code of Ethics</h2>
-            
-            <h3>A. Core Values</h3>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>དགོས་དོན།</h2>
             <ol>
-                <li><strong>Service to Society:</strong> The Society upholds physics as a means to serve the well-being of the Bhutanese people and the long-term interests of the nation, rather than personal, commercial, or ideological gain.</li>
-                <li><strong>Environmental Responsibility:</strong> The Society is committed to the protection of Bhutan’s natural environment and promotes scientific practices and technologies that respect ecological balance and intergenerational responsibility.</li>
-                <li><strong>Scientific Integrity:</strong> The Society values honesty, rigor, transparency, and critical inquiry in all scientific activities, recognizing these as essential foundations of credible and trustworthy physics.</li>
-                <li><strong>Mindfulness and Ethical Conduct:</strong> Guided by mindfulness and responsibility, the Society encourages thoughtful application of scientific knowledge, mindful of social, cultural, and environmental consequences.</li>
-                <li><strong>Respect for Culture and Tradition:</strong> The Society respects Bhutan’s cultural heritage and values and seeks to harmonize scientific advancement with national identity and the principles of Gross National Happiness.</li>
-                <li><strong>Inclusiveness and Capacity Building:</strong> The Society promotes inclusive participation, encourages young scientists, and supports the growth of local expertise across generations and regions.</li>
-                <li><strong>Collaboration and Mutual Respect:</strong> The Society fosters cooperation among individuals and institutions, valuing respectful dialogue, shared learning, and collective progress.</li>
+                <li>གློག་རིག་སློབ་གྲྭ་སློབ་མཁན་སྦྱོང་རིམ་གནང་བའི་སྐུལ་བརྡ་དང་སློབ་སྦྱོང་རིམ་དང་དཔེ་གསལ་གནང་བ།</li>
+                <li>རིག་གཞུང་དང་གཞུང་རྒྱུ་གི་རིག་འབྲེལ་བ་སྦྱོང་བ་ཨིན།</li>
+                <li>མི་དང་གཞུང་རྒྱུ་གི་རིག་འབྲེལ་བ་སྦྱོང་བ།</li>
             </ol>
+        </div>
+    </section>
 
-            <h3>B. Code of Ethics</h3>
-            <ol>
-                <li><strong>Professional Conduct:</strong>
-                    <ul>
-                        <li>Conduct themselves with honesty, humility, and professionalism</li>
-                        <li>Respect diverse viewpoints and maintain collegial relationships</li>
-                        <li>Avoid misuse of scientific authority or expertise</li>
-                    </ul>
-                </li>
-                <li><strong>Scientific Responsibility:</strong>
-                    <ul>
-                        <li>Uphold accuracy and objectivity in research, teaching, and communication</li>
-                        <li>Acknowledge limitations and uncertainties in scientific work</li>
-                        <li>Avoid fabrication, falsification, or misrepresentation of data</li>
-                    </ul>
-                </li>
-                <li><strong>Environmental and Social Ethics:</strong>
-                    <ul>
-                        <li>Promote scientific practices that minimize environmental harm</li>
-                        <li>Avoid endorsing activities that lead to ecological degradation or unsustainable resource use</li>
-                        <li>Consider social and cultural impacts when applying physics-based technologies</li>
-                    </ul>
-                </li>
-                <li><strong>Independence and Conflict of Interest:</strong>
-                    <ul>
-                        <li>Disclose any financial, institutional, or personal interests that may influence professional judgment</li>
-                        <li>Avoid conflicts of interest that compromise scientific integrity or public trust</li>
-                        <li>Ensure that Society activities remain independent and non-partisan</li>
-                    </ul>
-                </li>
-                <li><strong>Education and Public Engagement:</strong>
-                    <ul>
-                        <li>Communicate science responsibly and accurately to students, policymakers, and the public</li>
-                        <li>Encourage critical thinking and evidence-based understanding</li>
-                        <li>Avoid exaggeration or fear-based messaging</li>
-                    </ul>
-                </li>
-                <li><strong>Advisory Role and Public Trust:</strong>
-                    <ul>
-                        <li>Offer evidence-based advice without advocacy beyond their expertise</li>
-                        <li>Clearly distinguish scientific findings from personal opinions</li>
-                        <li>Respect institutional processes and national decision-making structures</li>
-                    </ul>
-                </li>
-                <li><strong>Accountability and Review:</strong>
-                    <ul>
-                        <li>The Society shall periodically review its ethical standards</li>
-                        <li>Members are accountable to the Society’s constitution and ethical guidelines</li>
-                        <li>Alleged ethical violations shall be addressed through fair and transparent procedures</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-    </main>
+</main>
 
-    <footer>
-        &copy; 2025 Bhutanese Physical Society. All rights reserved.
-    </footer>
+<footer>
+    &copy; 2025 Bhutanese Physical Society. All rights reserved.
+</footer>
+
+<script>
+function setLang(lang) {
+    document.querySelectorAll('.lang-en').forEach(el => {
+        el.style.display = (lang === 'en') ? 'block' : 'none';
+    });
+    document.querySelectorAll('.lang-dz').forEach(el => {
+        el.style.display = (lang === 'dz') ? 'block' : 'none';
+    });
+}
+</script>
 
 </body>
 </html>
+
