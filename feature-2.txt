@@ -1,4 +1,0 @@
-This is the initial feature
-This is one more change
-
-This is the change in file I am doing it for git commit --amend
