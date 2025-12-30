@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bhutanese Physical Society - Vision, Mission, Objectives & Values</title>
-
 <style>
 :root {
     --primary: #0b3d91;
@@ -27,7 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevent stacking on desktop */
 }
 
 .header-container img {
@@ -37,7 +36,7 @@ body {
 
 .header-title {
     text-align: center;
-    flex: 1 1 100%;
+    flex: 1; /* Center title without pushing logos */
 }
 
 .header-title h1 {
@@ -175,6 +174,13 @@ footer .profiles img {
         align-items: center;
         text-align: center;
     }
+    .header-container img {
+        margin: 0.5rem auto;
+    }
+    .header-title {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+    }
     nav ul {
         flex-direction: column;
     }
@@ -187,29 +193,35 @@ footer .profiles img {
 }
 </style>
 </head>
-
 <body>
 
 <header>
     <div class="header-container">
+        <!-- Left: RUB Logo -->
         <img src="RUB logo.png" alt="Royal University of Bhutan Logo">
+
+        <!-- Center: Title and subtitle -->
         <div class="header-title">
             <h1>Bhutanese Physical Society</h1>
             <p>Advancing Physics for a Sustainable and Knowledge-Based Bhutan</p>
         </div>
+
+        <!-- Right: BPS Logo -->
         <img src="logo.jpg" alt="Bhutanese Physical Society Logo">
     </div>
+
+    <!-- Map of Bhutan -->
     <img src="Bhutan map.jpg" alt="Map of Bhutan" class="map">
 </header>
 
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="members.html">Members</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#renewable-energy">Renewable Energy</a></li>
+        <li><a href="#about">About</a></li>
     </ul>
 </nav>
 
@@ -219,105 +231,91 @@ footer .profiles img {
 </div>
 
 <main>
+    <!-- Vision -->
+    <section id="vision">
+        <div class="lang-en">
+            <h2>Vision</h2>
+            <p>The Bhutanese Physical Society envisions a Bhutan where the understanding of nature through physics serves the well-being of people, the protection of the environment, and the prosperity of future generations.</p>
+            <p>Rooted in Bhutan’s cultural values and the principles of Gross National Happiness, the Society seeks to advance physics education, research, and innovation in ways that are ethical, mindful, and aligned with national priorities.</p>
+            <p>Through the responsible application of physics—particularly in renewable energy, climate resilience, and sustainable technologies—the Society aspires to support Bhutan’s transition toward a knowledge-based, environmentally harmonious, and self-reliant future.</p>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>དམིགས་ཡུལ།</h2>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་ཤེས་ཡོན་གྱིས་ མི་དང་ཁོར་ཡུག་གི་བདེ་སྐྱིད་ལུ་ ཕན་པ་བསྐྲུན་པའི་འབྲུག་ལུ་ དམིགས་བསལ་འཛིན་ནི་ཨིན།</p>
+        </div>
+    </section>
 
-<!-- About Section -->
-<section id="about">
-    <div class="lang-en">
-        <h2>About</h2>
-        <p>
-            The Bhutanese Physical Society is dedicated to promoting physics education,
-            research, and collaboration in Bhutan. The Society engages students, schools,
-            educators, and researchers through outreach programs, workshops, seminars,
-            and conferences to foster curiosity, scientific literacy, and a strong academic community.
-        </p>
-        <p>
-            By building national and international collaborations, the Society supports
-            the development of physics-driven solutions aligned with Bhutan’s cultural values,
-            Gross National Happiness, and sustainable development goals.
-        </p>
-    </div>
-    <div class="lang-dz" style="display:none;">
-        <h2>སྐོར་ལས།</h2>
-        <p>
-            འབྲུག་གི་གློག་རིག་ཚོགས་པས་
-            གློག་རིག་སློབ་གྲྭ་དང་ཞིབ་འཇུག་
-            ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།
-        </p>
-    </div>
-</section>
+    <!-- Mission -->
+    <section id="mission">
+        <div class="lang-en">
+            <h2>Mission</h2>
+            <p>The mission of the Bhutanese Physical Society is to promote the study, teaching, and application of physics in Bhutan for the benefit of society and the natural environment.</p>
+            <p>The Society works to strengthen physics education, support research and innovation, and encourage the responsible use of physics-based technologies—particularly in renewable energy, climate resilience, and sustainable systems.</p>
+            <p>Through collaboration with educational institutions, government agencies, industry, and communities, the Society seeks to build national scientific capacity and nurture young physicists in alignment with Bhutan’s cultural values and Gross National Happiness.</p>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>ལས་ཀ</h2>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་སློབ་གྲྭ་དང་ ཞིབ་འཇུག་དང་འགན་འཁུར་གྱི་ ལག་ལེན་ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།</p>
+        </div>
+    </section>
 
-<!-- Vision -->
-<section id="vision">
-    <div class="lang-en">
-        <h2>Vision</h2>
-        <p>The Bhutanese Physical Society envisions a Bhutan where the understanding of nature through physics serves the well-being of people, the protection of the environment, and the prosperity of future generations.</p>
-        <p>Rooted in Bhutan’s cultural values and the principles of Gross National Happiness, the Society seeks to advance physics education, research, and innovation in ways that are ethical, mindful, and aligned with national priorities.</p>
-        <p>Through the responsible application of physics—particularly in renewable energy, climate resilience, and sustainable technologies—the Society aspires to support Bhutan’s transition toward a knowledge-based, environmentally harmonious, and self-reliant future.</p>
-    </div>
-    <div class="lang-dz" style="display:none;">
-        <h2>དམིགས་ཡུལ།</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་ཤེས་ཡོན་གྱིས་ མི་དང་ཁོར་ཡུག་གི་བདེ་སྐྱིད་ལུ་ ཕན་པ་བསྐྲུན་པའི་འབྲུག་ལུ་ དམིགས་བསལ་འཛིན་ནི་ཨིན།</p>
-    </div>
-</section>
+    <!-- Objectives -->
+    <section id="objectives">
+        <div class="lang-en">
+            <h2>Objectives</h2>
+            <ol>
+                <li>Promote physics education through quality teaching and learning resources.</li>
+                <li>Encourage research in renewable energy, environmental physics, and climate resilience.</li>
+                <li>Nurture young physicists and researchers through mentorship and training.</li>
+                <li>Facilitate collaboration among physicists, educators, and institutions.</li>
+                <li>Provide evidence-based scientific input for national development.</li>
+                <li>Promote ethical and responsible applications of physics.</li>
+                <li>Organize lectures, workshops, conferences, and outreach programs.</li>
+            </ol>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>དགོས་དོན།</h2>
+            <ol>
+                <li>གློག་རིག་སློབ་གྲྭ་དང་སྦྱོང་རིམ་ལུ་སྐུལ་བརྡ་གནང་ནི།</li>
+                <li>ཞིབ་འཇུག་དང་གསར་བསྐྲུན་ལུ་འབྲེལ་བ་བརྒྱབ་ནི།</li>
+                <li>གཞོན་སྐྱེས་གློག་རིག་པ་ཚུ་སྐྱོང་ནི།</li>
+            </ol>
+        </div>
+    </section>
 
-<!-- Mission -->
-<section id="mission">
-    <div class="lang-en">
-        <h2>Mission</h2>
-        <p>The mission of the Bhutanese Physical Society is to promote the study, teaching, and application of physics in Bhutan for the benefit of society and the natural environment.</p>
-        <p>The Society works to strengthen physics education, support research and innovation, and encourage the responsible use of physics-based technologies—particularly in renewable energy, climate resilience, and sustainable systems.</p>
-        <p>Through collaboration with educational institutions, government agencies, industry, and communities, the Society seeks to build national scientific capacity and nurture young physicists in alignment with Bhutan’s cultural values and Gross National Happiness.</p>
-    </div>
-    <div class="lang-dz" style="display:none;">
-        <h2>ལས་ཀ</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་སློབ་གྲྭ་དང་ ཞིབ་འཇུག་དང་འགན་འཁུར་གྱི་ ལག་ལེན་ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།</p>
-    </div>
-</section>
+    <!-- About -->
+    <section id="about">
+        <div class="lang-en">
+            <h2>About Bhutanese Physics Society</h2>
+            <p>Bhutanese Physics Society is dedicated to promoting physics education, research, and collaboration in Bhutan. We engage students, schools, and researchers through outreach, workshops, and conferences to foster curiosity, learning, and a strong scientific community.</p>
+            <p>The Society organizes conferences, workshops, seminars, and summer or winter schools in physics and related fields, bringing together local and international experts, creating opportunities for scholarly interaction, and exposing participants to current advances in physics research and education.</p>
+            <p>Through conferences, school outreach, collaborative projects, and open platforms such as GitHub, the Bhutanese Physics Society aspires to cultivate a sustainable and vibrant physics community in Bhutan—one that supports learning, research excellence, and the long-term development of science for societal benefit.</p>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>རྫོང་ཁ་ལྡན་དང་སློབ་གྲྭ</h2>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་སློབ་གྲྭ་དང་སྦྱོང་རིམ་ལུ་སྐུལ་བརྡ་གནང་ནི།</p>
+        </div>
+    </section>
 
-<!-- Objectives -->
-<section id="objectives">
-    <div class="lang-en">
-        <h2>Objectives</h2>
-        <ol>
-            <li>Promote physics education through quality teaching and learning resources.</li>
-            <li>Encourage research in renewable energy, environmental physics, and climate resilience.</li>
-            <li>Nurture young physicists and researchers through mentorship and training.</li>
-            <li>Facilitate collaboration among physicists, educators, and institutions.</li>
-            <li>Provide evidence-based scientific input for national development.</li>
-            <li>Promote ethical and responsible applications of physics.</li>
-            <li>Organize lectures, workshops, conferences, and outreach programs.</li>
-        </ol>
-    </div>
-    <div class="lang-dz" style="display:none;">
-        <h2>དགོས་དོན།</h2>
-        <ol>
-            <li>གློག་རིག་སློབ་གྲྭ་དང་སྦྱོང་རིམ་ལུ་སྐུལ་བརྡ་གནང་ནི།</li>
-            <li>ཞིབ་འཇུག་དང་གསར་བསྐྲུན་ལུ་འབྲེལ་བ་བརྒྱབ་ནི།</li>
-            <li>གཞོན་སྐྱེས་གློག་རིག་པ་ཚུ་སྐྱོང་ནི།</li>
-        </ol>
-    </div>
-</section>
-
-<!-- Renewable Energy -->
-<section id="renewable-energy">
-    <div class="lang-en">
-        <h2>Renewable Energy Projects</h2>
-        <p>The Bhutanese Physical Society actively promotes research and education in renewable energy technologies. Our projects include:</p>
-        <ul>
-            <li><a href="Renewable-Energy/Biomass-Gasification/index.html">Biomass Gasification</a></li>
-            <li><a href="Renewable-Energy/Linear-Mirror-Solar-Concentrator/index.html">Linear Mirror Solar Concentrator</a></li>
-        </ul>
-    </div>
-    <div class="lang-dz" style="display:none;">
-        <h2>ཡུལ་ལྡན་རིམ་དང་གཞི་བཞིན་དང་།</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ ཡུལ་ལྡན་རིམ་དང་གཞི་བཞིན་གི་ཞིབ་འཇུག་དང་སློབ་གྲྭ་གི་ལས་ཀ་བྱེད་ཀྱི་ཡོད།</p>
-        <ul>
-            <li><a href="Renewable-Energy/Biomass-Gasification/index.html">བྱ་མེད་སྦྱོང་རིམ་གྱི་ངང་མེད་དང་།</a></li>
-            <li><a href="Renewable-Energy/Linear-Mirror-Solar-Concentrator/index.html">ཡུལ་ལྡན་ཉམས་ཞིབ་ཉིན་བཟུམ་གཞི་བཞིན་།</a></li>
-        </ul>
-    </div>
-</section>
-
+    <!-- Renewable Energy -->
+    <section id="renewable-energy">
+        <div class="lang-en">
+            <h2>Renewable Energy Projects</h2>
+            <p>The Bhutanese Physical Society actively promotes research and education in renewable energy technologies. Our projects include:</p>
+            <ul>
+                <li><a href="Renewable-Energy/Biomass-Gasification/index.html">Biomass Gasification</a></li>
+                <li><a href="Renewable-Energy/Linear-Mirror-Solar-Concentrator/index.html">Linear Mirror Solar Concentrator</a></li>
+            </ul>
+        </div>
+        <div class="lang-dz" style="display:none;">
+            <h2>ཡུལ་ལྡན་རིམ་དང་གཞི་བཞིན་དང་།</h2>
+            <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ ཡུལ་ལྡན་རིམ་དང་གཞི་བཞིན་གི་ཞིབ་འཇུག་དང་སློབ་གྲྭ་གི་ལས་ཀ་བྱེད་ཀྱི་ཡོད།</p>
+            <ul>
+                <li><a href="Renewable-Energy/Biomass-Gasification/index.html">བྱ་མེད་སྦྱོང་རིམ་གྱི་ངང་མེད་དང་།</a></li>
+                <li><a href="Renewable-Energy/Linear-Mirror-Solar-Concentrator/index.html">ཡུལ་ལྡན་ཉམས་ཞིབ་ཉིན་བཟུམ་གཞི་བཞིན་།</a></li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 <!-- Professional Footer -->
