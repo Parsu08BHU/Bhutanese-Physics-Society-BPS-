@@ -1,0 +1,14 @@
+img.project-image {
+    max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    img.project-image {
+        max-width: 90%;
+    }
+}
