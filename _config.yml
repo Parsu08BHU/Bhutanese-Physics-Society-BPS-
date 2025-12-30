@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+title: Bhutanese Physical Society
+description: Official website
+baseurl: "/Bhutanese-Physical-Society"
+theme: minima
