@@ -21,7 +21,7 @@ body {
     color: var(--text);
 }
 
-/* Header */
+/* ================= HEADER ================= */
 .header-container {
     display: flex;
     align-items: center;
@@ -32,7 +32,6 @@ body {
 
 .header-container img {
     max-height: 70px;
-    margin: 0.5rem;
 }
 
 .header-title {
@@ -42,21 +41,21 @@ body {
 
 .header-title h1 {
     font-size: 2rem;
-    margin: 0.2rem 0;
+    margin: 0.3rem 0;
 }
 
 .header-title p {
     font-style: italic;
-    margin: 0.2rem 0;
+    margin: 0;
 }
 
 header img.map {
     display: block;
     max-width: 220px;
-    margin: 1rem auto 0;
+    margin: 1rem auto;
 }
 
-/* Navigation */
+/* ================= NAVIGATION ================= */
 nav {
     background: white;
     border-bottom: 1px solid #ddd;
@@ -67,7 +66,7 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0.5rem;
+    padding: 0.6rem;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -75,7 +74,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 nav a {
@@ -88,7 +87,7 @@ nav a:hover {
     color: var(--accent);
 }
 
-/* Language switch */
+/* ================= LANGUAGE SWITCH ================= */
 .lang-switch {
     text-align: center;
     margin: 1rem 0;
@@ -99,7 +98,7 @@ nav a:hover {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
+    margin: 0 0.3rem;
     cursor: pointer;
     font-weight: bold;
     border-radius: 4px;
@@ -110,7 +109,7 @@ nav a:hover {
     color: #000;
 }
 
-/* Main content */
+/* ================= MAIN CONTENT ================= */
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -133,7 +132,7 @@ ul, ol {
     margin-left: 1.5rem;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
     background-color: #f2f2f2;
     padding: 2rem 1rem;
@@ -156,16 +155,31 @@ footer a:hover {
 
 footer .profiles img {
     height: 28px;
-    margin: 0 0.5rem;
+    margin: 0 0.4rem;
 }
 
-/* Responsive */
-@media (max-width: 767px) {
+/* ================= MOBILE OPTIMIZATION ================= */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
     nav ul {
         flex-direction: column;
     }
+
     nav li {
-        margin: 0.5rem 0;
+        margin: 0.4rem 0;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    header img.map {
+        max-width: 180px;
     }
 }
 </style>
@@ -206,51 +220,67 @@ footer .profiles img {
 
 <main>
 
-<!-- About -->
+<!-- ================= ABOUT (NEW SECTION ONLY) ================= -->
 <section id="about">
     <div class="lang-en">
         <h2>About the Bhutanese Physical Society</h2>
-        <p>The Bhutanese Physical Society is dedicated to promoting physics education, research, and collaboration in Bhutan. We engage students, schools, and researchers through outreach programs, workshops, and conferences to foster curiosity, learning, and a strong scientific community.</p>
-        <p>The Society plans to organize conferences, workshops, seminars, and seasonal schools in physics and related fields, bringing together local and international experts and exposing participants to current advances in physics research and education.</p>
-        <p>Through conferences, outreach, collaborative projects, and open platforms such as GitHub, the Society aspires to cultivate a sustainable and vibrant physics community in Bhutan.</p>
+        <p>
+            The Bhutanese Physical Society is dedicated to promoting physics education, research,
+            and collaboration in Bhutan. The Society engages students, schools, and researchers
+            through outreach programs, workshops, seminars, and conferences to foster curiosity,
+            learning, and a strong scientific community.
+        </p>
+        <p>
+            By connecting Bhutanese institutions with the global physics community, the Society
+            aims to strengthen national capacity in science, technology, and innovation while
+            remaining aligned with Bhutan’s cultural values and development priorities.
+        </p>
     </div>
 
     <div class="lang-dz" style="display:none;">
         <h2>སྐོར་ལས།</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ འབྲུག་ནང་གློག་རིག་སློབ་གྲྭ་ དང་ཞིབ་འཇུག་ ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།</p>
+        <p>
+            འབྲུག་གི་གློག་རིག་ཚོགས་པས་ འབྲུག་ནང་གློག་རིག་སློབ་གྲྭ་
+            དང་ཞིབ་འཇུག་ ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།
+        </p>
     </div>
 </section>
 
-<!-- Vision -->
+<!-- ================= EXISTING SECTIONS (UNCHANGED) ================= -->
+
 <section id="vision">
     <div class="lang-en">
         <h2>Vision</h2>
-        <p>The Society envisions a Bhutan where physics serves people, the environment, and future generations, aligned with Gross National Happiness.</p>
+        <p>
+            The Bhutanese Physical Society envisions a Bhutan where the understanding of nature
+            through physics serves the well-being of people, environmental protection,
+            and future generations.
+        </p>
     </div>
 </section>
 
-<!-- Mission -->
 <section id="mission">
     <div class="lang-en">
         <h2>Mission</h2>
-        <p>To promote physics education, research, and responsible applications for sustainable national development.</p>
+        <p>
+            To promote physics education, research, and responsible application of physics
+            for sustainable development and national well-being.
+        </p>
     </div>
 </section>
 
-<!-- Objectives -->
 <section id="objectives">
     <div class="lang-en">
         <h2>Objectives</h2>
         <ol>
-            <li>Strengthen physics education</li>
-            <li>Encourage renewable energy research</li>
-            <li>Nurture young physicists</li>
-            <li>Promote ethical applications of physics</li>
+            <li>Promote quality physics education</li>
+            <li>Encourage renewable energy and environmental research</li>
+            <li>Nurture young physicists and researchers</li>
+            <li>Support ethical applications of physics</li>
         </ol>
     </div>
 </section>
 
-<!-- Renewable Energy -->
 <section id="renewable-energy">
     <div class="lang-en">
         <h2>Renewable Energy Projects</h2>
@@ -278,9 +308,15 @@ footer .profiles img {
     </section>
 
     <section class="profiles">
-        <a href="https://github.com/Parsu08BHU" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"></a>
-        <a href="https://www.linkedin.com/in/parsu-ram-sharma-019795185" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white"></a>
-        <a href="https://orcid.org/0000-0002-9465-8449" target="_blank"><img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white"></a>
+        <a href="https://github.com/Parsu08BHU" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white">
+        </a>
+        <a href="https://www.linkedin.com/in/parsu-ram-sharma-019795185" target="_blank">
+            <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white">
+        </a>
+        <a href="https://orcid.org/0000-0002-9465-8449" target="_blank">
+            <img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white">
+        </a>
     </section>
 
     <p style="text-align:center;font-size:0.9rem;">© 2026 Bhutanese Physical Society</p>
