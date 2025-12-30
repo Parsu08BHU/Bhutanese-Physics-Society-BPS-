@@ -1,47 +1,46 @@
 :root {
-    --primary: #0b3d91;
-    --secondary: #f4f6f9;
-    --accent: #f2b705;
+    --primary: #0b3d91; 
+    --accent: #f2b705;  
+    --secondary: #f9f9f9;
     --text: #333;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: var(--secondary);
-    color: var(--text);
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    color: var(--text);
 }
 
 header {
-    background: linear-gradient(120deg, var(--primary), #123f7a);
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding: 2rem 1rem;
+    border-bottom: 4px solid var(--accent);
 }
 
-header img {
-    max-width: 80px;
-    margin-bottom: 0.5rem;
+header img.logo {
+    max-width: 100px;
+    margin-bottom: 1rem;
 }
 
 nav {
-    background: white;
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
+    display: flex;
+    gap: 2rem;
     margin: 0;
-    padding: 0.5rem;
-}
-
-nav li {
-    margin: 0 1rem;
+    padding: 0;
 }
 
 nav a {
@@ -52,6 +51,27 @@ nav a {
 
 nav a:hover {
     color: var(--accent);
+}
+
+.lang-switch {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.lang-switch button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.lang-switch button:hover {
+    background-color: var(--accent);
 }
 
 main {
@@ -65,15 +85,84 @@ section {
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
 }
 
-h2, h3 {
+section:hover {
+    transform: translateY(-4px);
+}
+
+h1,h2,h3 {
     color: var(--primary);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--accent);
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+}
+
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent);
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #e9ecf1;
+    background-color: #e0e0e0;
+}
+
+@media (max-width:768px){
+    nav ul { flex-direction: column; gap: 1rem; }
+    section { padding: 1rem; }
 }

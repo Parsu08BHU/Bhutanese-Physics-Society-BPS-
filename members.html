@@ -5,12 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bhutanese Physical Society - Members</title>
 <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+/* Header layout for dual logos */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.header-container img {
+    max-height: 70px;
+}
+
+.header-title {
+    text-align: center;
+    flex: 1;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <img src="assets/images/logo.svg" alt="BPS Logo">
-    <h1>Bhutanese Physical Society</h1>
+    <div class="header-container">
+        <!-- Left: RUB Logo -->
+        <img src="RUB%20logo.png" alt="Royal University of Bhutan Logo">
+
+        <!-- Center: Title -->
+        <div class="header-title">
+            <h1>Bhutanese Physical Society</h1>
+        </div>
+
+        <!-- Right: BPS Logo -->
+        <img src="logo.jpg" alt="Bhutanese Physical Society Logo" class="logo">
+    </div>
 </header>
 
 <nav>
@@ -29,14 +59,36 @@
 
 <main>
 <section>
+
+    <!-- English -->
     <div class="lang-en">
         <h2>Executive Committee</h2>
         <table border="1" cellpadding="8" cellspacing="0" width="100%">
-            <tr><th>Position</th><th>Name</th><th>Affiliation</th></tr>
-            <tr><td>President</td><td>Dr. Parsu Ram Sharma</td><td>Royal University of Bhutan</td></tr>
-            <tr><td>Vice President</td><td>Dr. Jas Raj Subba</td><td>Sherubtse College</td></tr>
-            <tr><td>Secretary</td><td>Mr. Mon Bahadur Ghalley</td><td>Sherubte College</td></tr>
-            <tr><td>Treasurer</td><td>Mr. Shacha Thinley</td><td>Sherubtse College</td></tr>
+            <tr>
+                <th>Position</th>
+                <th>Name</th>
+                <th>Affiliation</th>
+            </tr>
+            <tr>
+                <td>President</td>
+                <td>Dr. Parsu Ram Sharma</td>
+                <td>Royal University of Bhutan</td>
+            </tr>
+            <tr>
+                <td>Vice President</td>
+                <td>Dr. Jas Raj Subba</td>
+                <td>Sherubtse College</td>
+            </tr>
+            <tr>
+                <td>Secretary</td>
+                <td>Mr. Mon Bahadur Ghalley</td>
+                <td>Sherubtse College</td>
+            </tr>
+            <tr>
+                <td>Treasurer</td>
+                <td>Mr. Shacha Thinley</td>
+                <td>Sherubtse College</td>
+            </tr>
         </table>
 
         <h3>General Members</h3>
@@ -49,28 +101,56 @@
         </ul>
     </div>
 
+    <!-- Dzongkha -->
     <div class="lang-dz" style="display:none;">
-        <h2>གྲུབ་མཛད་སྤྱི་ཚོགས།</h2>
+        <h2>གྲུབ་མཛད་ལས་ཚོགས།</h2>
         <table border="1" cellpadding="8" cellspacing="0" width="100%">
-            <tr><th>ལས་ཁུངས།</th><th>མིང་</th><th>གནས་སྟངས།</th></tr>
-            <tr><td>གྲུབ་མཛད་ཚོགས་མི</td><td>དགེ་རྒྱུན་ཀར་མ་ཝང་ཅུག</td><td>རྒྱ་མཚོ་རིག་རིག་སློབ་གྲྭ</td></tr>
-            <tr><td>གྲུབ་མཛད་སྦྱོང་བའི་ཚོགས་མི</td><td>དགེ་རྒྱུན་པ་དབེ་མ་རྡོ་རྗེ</td><td>གློག་རིག་རིག་སློབ་གྲྭ</td></tr>
-            <tr><td>གྲུབ་མཛད་ཚོགས་རིམ་སྦྱོང</td><td>དགེ་རྒྱུན་སྲོནམ་ཆོ་ལེན</td><td>རྒྱ་མཚོ་སློབ་གྲྭ</td></tr>
-            <tr><td>དངུལ་རྟགས་རྒྱུན</td><td>དགེ་རྒྱུན་ཏཤི་རྒྱལ་མཚན</td><td>རྒྱ་མཚོ་རིག་རིག་སློབ་གྲྭ</td></tr>
+            <tr>
+                <th>ལས་ཁུངས།</th>
+                <th>མིང་</th>
+                <th>གནས་སྟངས།</th>
+            </tr>
+            <tr>
+                <td>ཚོགས་གཙོ།</td>
+                <td>ཌོག་ཊར་ པར་སུ་ རམ་ ཤར་མ</td>
+                <td>འབྲུག་རྒྱལ་ཡོངས་མཐོ་སློབ</td>
+            </tr>
+            <tr>
+                <td>ཚོགས་གཙོ་འོག་མ།</td>
+                <td>ཌོག་ཊར་ ཇས་ རཱཇ་ སུབ་པ</td>
+                <td>ཤེར་རབ་རྩེ་སློབ་གྲྭ</td>
+            </tr>
+            <tr>
+                <td>དྲུང་ཡིག་པ།</td>
+                <td>སྐུ་ཞབས་ མོན་ བ་ཧ་དུར་ གྷ་ལེ</td>
+                <td>ཤེར་རབ་རྩེ་སློབ་གྲྭ</td>
+            </tr>
+            <tr>
+                <td>དངུལ་རྟགས་པ།</td>
+                <td>སྐུ་ཞབས་ ཤ་ཅ་ ཐིན་ལེ</td>
+                <td>ཤེར་རབ་རྩེ་སློབ་གྲྭ</td>
+            </tr>
         </table>
     </div>
+
 </section>
 </main>
 
 <footer>
-    &copy; 2025 Bhutanese Physical Society. All rights reserved.
+    &copy; 2026 Bhutanese Physical Society. All rights reserved.
 </footer>
 
 <script>
 function setLang(lang) {
-    document.querySelectorAll('.lang-en').forEach(el => el.style.display = (lang==='en')?'block':'none');
-    document.querySelectorAll('.lang-dz').forEach(el => el.style.display = (lang==='dz')?'block':'none');
+    document.querySelectorAll('.lang-en').forEach(el => {
+        el.style.display = (lang === 'en') ? 'block' : 'none';
+    });
+    document.querySelectorAll('.lang-dz').forEach(el => {
+        el.style.display = (lang === 'dz') ? 'block' : 'none';
+    });
 }
 </script>
+
 </body>
 </html>
+
