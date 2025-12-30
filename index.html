@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhutanese Physical Society - Vision, Mission, Objectives & Values</title>
+<title>Bhutanese Physical Society</title>
 
 <style>
 :root {
@@ -21,7 +21,7 @@ body {
     color: var(--text);
 }
 
-/* Header layout for dual logos with centered title */
+/* Header */
 .header-container {
     display: flex;
     align-items: center;
@@ -41,14 +41,12 @@ body {
 }
 
 .header-title h1 {
-    font-weight: bold;
     font-size: 2rem;
     margin: 0.2rem 0;
 }
 
 .header-title p {
     font-style: italic;
-    font-size: 1rem;
     margin: 0.2rem 0;
 }
 
@@ -58,12 +56,12 @@ header img.map {
     margin: 1rem auto 0;
 }
 
+/* Navigation */
 nav {
     background: white;
     border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
-    text-align: center;
     z-index: 100;
 }
 
@@ -90,6 +88,7 @@ nav a:hover {
     color: var(--accent);
 }
 
+/* Language switch */
 .lang-switch {
     text-align: center;
     margin: 1rem 0;
@@ -111,6 +110,7 @@ nav a:hover {
     color: #000;
 }
 
+/* Main content */
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -133,15 +133,11 @@ ul, ol {
     margin-left: 1.5rem;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
     background-color: #f2f2f2;
     padding: 2rem 1rem;
     border-top: 1px solid #ddd;
-}
-
-footer section {
-    margin-bottom: 1.5rem;
 }
 
 footer ul {
@@ -158,41 +154,18 @@ footer a:hover {
     color: var(--accent);
 }
 
-footer p, footer li {
-    color: #333;
-}
-
 footer .profiles img {
-    margin: 0 0.5rem;
-    vertical-align: middle;
     height: 28px;
+    margin: 0 0.5rem;
 }
 
-/* Responsive design */
-@media (min-width: 768px) {
-    .header-title {
-        flex: 1 1 auto;
-        order: 0;
-    }
-}
-
+/* Responsive */
 @media (max-width: 767px) {
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .header-container img {
-        margin: 0.5rem auto;
-    }
     nav ul {
         flex-direction: column;
     }
     nav li {
         margin: 0.5rem 0;
-    }
-    footer section {
-        text-align: center;
     }
 }
 </style>
@@ -202,26 +175,23 @@ footer .profiles img {
 
 <header>
     <div class="header-container">
-        <!-- Left: RUB Logo -->
         <img src="RUB logo.png" alt="Royal University of Bhutan Logo">
 
-        <!-- Center: Title and subtitle -->
         <div class="header-title">
             <h1>Bhutanese Physical Society</h1>
             <p>Advancing Physics for a Sustainable and Knowledge-Based Bhutan</p>
         </div>
 
-        <!-- Right: BPS Logo -->
         <img src="logo.jpg" alt="Bhutanese Physical Society Logo">
     </div>
 
-    <!-- Map of Bhutan -->
     <img src="Bhutan map.jpg" alt="Map of Bhutan" class="map">
 </header>
 
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="members.html">Members</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -236,18 +206,26 @@ footer .profiles img {
 
 <main>
 
+<!-- About -->
+<section id="about">
+    <div class="lang-en">
+        <h2>About the Bhutanese Physical Society</h2>
+        <p>The Bhutanese Physical Society is dedicated to promoting physics education, research, and collaboration in Bhutan. We engage students, schools, and researchers through outreach programs, workshops, and conferences to foster curiosity, learning, and a strong scientific community.</p>
+        <p>The Society plans to organize conferences, workshops, seminars, and seasonal schools in physics and related fields, bringing together local and international experts and exposing participants to current advances in physics research and education.</p>
+        <p>Through conferences, outreach, collaborative projects, and open platforms such as GitHub, the Society aspires to cultivate a sustainable and vibrant physics community in Bhutan.</p>
+    </div>
+
+    <div class="lang-dz" style="display:none;">
+        <h2>སྐོར་ལས།</h2>
+        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ འབྲུག་ནང་གློག་རིག་སློབ་གྲྭ་ དང་ཞིབ་འཇུག་ ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།</p>
+    </div>
+</section>
+
 <!-- Vision -->
 <section id="vision">
     <div class="lang-en">
         <h2>Vision</h2>
-        <p>The Bhutanese Physical Society envisions a Bhutan where the understanding of nature through physics serves the well-being of people, the protection of the environment, and the prosperity of future generations.</p>
-        <p>Rooted in Bhutan’s cultural values and the principles of Gross National Happiness, the Society seeks to advance physics education, research, and innovation in ways that are ethical, mindful, and aligned with national priorities.</p>
-        <p>Through the responsible application of physics—particularly in renewable energy, climate resilience, and sustainable technologies—the Society aspires to support Bhutan’s transition toward a knowledge-based, environmentally harmonious, and self-reliant future.</p>
-    </div>
-
-    <div class="lang-dz" style="display:none;">
-        <h2>དམིགས་ཡུལ།</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་ཤེས་ཡོན་གྱིས་ མི་དང་ཁོར་ཡུག་གི་བདེ་སྐྱིད་ལུ་ ཕན་པ་བསྐྲུན་པའི་འབྲུག་ལུ་ དམིགས་བསལ་འཛིན་ནི་ཨིན།</p>
+        <p>The Society envisions a Bhutan where physics serves people, the environment, and future generations, aligned with Gross National Happiness.</p>
     </div>
 </section>
 
@@ -255,14 +233,7 @@ footer .profiles img {
 <section id="mission">
     <div class="lang-en">
         <h2>Mission</h2>
-        <p>The mission of the Bhutanese Physical Society is to promote the study, teaching, and application of physics in Bhutan for the benefit of society and the natural environment.</p>
-        <p>The Society works to strengthen physics education, support research and innovation, and encourage the responsible use of physics-based technologies—particularly in renewable energy, climate resilience, and sustainable systems.</p>
-        <p>Through collaboration with educational institutions, government agencies, industry, and communities, the Society seeks to build national scientific capacity and nurture young physicists in alignment with Bhutan’s cultural values and Gross National Happiness.</p>
-    </div>
-
-    <div class="lang-dz" style="display:none;">
-        <h2>ལས་ཀ</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ གློག་རིག་གི་སློབ་གྲྭ་དང་ ཞིབ་འཇུག་དང་འགན་འཁུར་གྱི་ ལག་ལེན་ལུ་སྐུལ་བརྡ་གནང་ནི་ཨིན།</p>
+        <p>To promote physics education, research, and responsible applications for sustainable national development.</p>
     </div>
 </section>
 
@@ -271,22 +242,10 @@ footer .profiles img {
     <div class="lang-en">
         <h2>Objectives</h2>
         <ol>
-            <li>Promote physics education through quality teaching and learning resources.</li>
-            <li>Encourage research in renewable energy, environmental physics, and climate resilience.</li>
-            <li>Nurture young physicists and researchers through mentorship and training.</li>
-            <li>Facilitate collaboration among physicists, educators, and institutions.</li>
-            <li>Provide evidence-based scientific input for national development.</li>
-            <li>Promote ethical and responsible applications of physics.</li>
-            <li>Organize lectures, workshops, conferences, and outreach programs.</li>
-        </ol>
-    </div>
-
-    <div class="lang-dz" style="display:none;">
-        <h2>དགོས་དོན།</h2>
-        <ol>
-            <li>གློག་རིག་སློབ་གྲྭ་དང་སྦྱོང་རིམ་ལུ་སྐུལ་བརྡ་གནང་ནི།</li>
-            <li>ཞིབ་འཇུག་དང་གསར་བསྐྲུན་ལུ་འབྲེལ་བ་བརྒྱབ་ནི།</li>
-            <li>གཞོན་སྐྱེས་གློག་རིག་པ་ཚུ་སྐྱོང་ནི།</li>
+            <li>Strengthen physics education</li>
+            <li>Encourage renewable energy research</li>
+            <li>Nurture young physicists</li>
+            <li>Promote ethical applications of physics</li>
         </ol>
     </div>
 </section>
@@ -295,52 +254,36 @@ footer .profiles img {
 <section id="renewable-energy">
     <div class="lang-en">
         <h2>Renewable Energy Projects</h2>
-        <p>The Bhutanese Physical Society actively promotes research and education in renewable energy technologies. Our projects include:</p>
         <ul>
             <li><a href="Renewable-Energy/Biomass-Gasification/index.html">Biomass Gasification</a></li>
             <li><a href="Renewable-Energy/Linear-Mirror-Solar-Concentrator/index.html">Linear Mirror Solar Concentrator</a></li>
-        </ul>
-    </div>
-
-    <div class="lang-dz" style="display:none;">
-        <h2>ཡུལ་ལྡན་རིམ་དང་གཞི་བཞིན་དང་།</h2>
-        <p>འབྲུག་གི་གློག་རིག་ཚོགས་པས་ ཡུལ་ལྡན་རིམ་དང་གཞི་བཞིན་གི་ཞིབ་འཇུག་དང་སློབ་གྲྭ་གི་ལས་ཀ་བྱེད་ཀྱི་ཡོད།</p>
-        <ul>
-            <li><a href="Renewable-Energy/Biomass-Gasification/index.html">བྱ་མེད་སྦྱོང་རིམ་གྱི་ངང་མེད་དང་།</a></li>
-            <li><a href="Renewable-Energy/Linear-Mirror-Solar-Concentrator/index.html">ཡུལ་ལྡན་ཉམས་ཞིབ་ཉིན་བཟུམ་གཞི་བཞིན་།</a></li>
         </ul>
     </div>
 </section>
 
 </main>
 
-<!-- Professional Footer -->
 <footer>
     <section>
         <h3>🌐 Social & Outreach</h3>
         <ul>
-            <li><strong>Facebook</strong> – Sharing academic activities, research outreach, workshops, and science communication initiatives. <a href="https://www.facebook.com/share/1ARxRuJLuU/?mibextid=wwXIfr" target="_blank">Read more</a></li>
-            <li><strong>Instagram</strong> – Visual documentation of research work, laboratory setups, conferences, field installations, and academic activities. <a href="https://www.instagram.com/lateris_re.lab?igsh=d2t4aDJ3bjZ2d29y&utm_source=qr" target="_blank">Read more</a></li>
+            <li><a href="https://www.facebook.com/share/1ARxRuJLuU/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/lateris_re.lab" target="_blank">Instagram</a></li>
         </ul>
     </section>
 
     <section>
-        <h3>📬 Contact Details</h3>
-        <p>📍 <strong>Location:</strong> Udine, Italy</p>
-        <p>📧 <strong>Email:</strong> <a href="mailto:parsu.scholar@gmail.com">parsu.scholar@gmail.com</a></p>
-        <p>📞 <strong>Phone:</strong> +39 351 342 6367</p>
+        <h3>📬 Contact</h3>
+        <p>Email: <a href="mailto:parsu.scholar@gmail.com">parsu.scholar@gmail.com</a></p>
     </section>
 
-    <section class="profiles" style="text-align:center;">
-        <h3>🔗 Professional Profiles</h3>
-        <p>
-            <a href="https://github.com/Parsu08BHU" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"/></a>
-            <a href="https://www.linkedin.com/in/parsu-ram-sharma-019795185" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-            <a href="https://orcid.org/0000-0002-9465-8449" target="_blank"><img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white" alt="ORCID"/></a>
-        </p>
+    <section class="profiles">
+        <a href="https://github.com/Parsu08BHU" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"></a>
+        <a href="https://www.linkedin.com/in/parsu-ram-sharma-019795185" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white"></a>
+        <a href="https://orcid.org/0000-0002-9465-8449" target="_blank"><img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white"></a>
     </section>
 
-    <p style="text-align:center; font-size:0.9rem; color:#666;">&copy; 2026 Bhutanese Physical Society. All rights reserved.</p>
+    <p style="text-align:center;font-size:0.9rem;">© 2026 Bhutanese Physical Society</p>
 </footer>
 
 <script>
