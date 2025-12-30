@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biomass Gasification - Bhutanese Physical Society</title>
+
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -45,50 +46,87 @@ a:hover {
     color: #f2b705;
 }
 
-img {
-    max-width: 100%;
+/* ✅ Project image styling */
+.project-image {
+    max-width: 65%;
     height: auto;
     display: block;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     border-radius: 8px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .project-image {
+        max-width: 90%;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <header>
     <h1>Biomass Gasification</h1>
     <p>Innovative High-Flow Gasifier for Clean Energy</p>
-    <img src="images/Gasifier.jpeg" alt="High-Flow Gasifier Prototype">
+
+    <!-- ✅ Corrected image -->
+    <img src="images/Gasifier.jpeg"
+         alt="High-Flow Gasifier Prototype"
+         class="project-image">
 </header>
 
 <main>
+
     <section id="problem">
         <h2>The Challenge</h2>
-        <p>The world currently faces a dual crisis: shrinking fossil fuel reserves and a rapidly depleting carbon budget. Despite the availability of renewable resources, billions of tons of agricultural waste are destroyed through field burning annually. This practice contributes to <strong>40% of regional air pollution</strong> and represents a lost energy value of roughly <strong>$50 billion</strong>.</p>
+        <p>
+            The world currently faces a dual crisis: shrinking fossil fuel reserves and a rapidly depleting
+            carbon budget. Despite the availability of renewable resources, billions of tons of agricultural
+            waste are destroyed through field burning annually. This practice contributes to
+            <strong>40% of regional air pollution</strong> and represents a lost energy value of roughly
+            <strong>$50 billion</strong>.
+        </p>
     </section>
 
     <section id="solution">
         <h2>The Solution: A New Paradigm in Gasification</h2>
-        <p>While traditional gasification has existed since the 1800s, conventional industrial gasifiers are often hindered by their large size, high cost, and issues like tar formation or feedstock blockages.</p>
-        <p>Sharma’s research introduces a new construction principle for gasifiers. By inverting the traditional causality chain—viewing the gasification process not as a result of oxygen lack, but as the origin of lower oxygen consumption—designers can implement abundant air inlets to create a larger, more homogeneous reaction zone.</p>
+        <p>
+            While traditional gasification has existed since the 1800s, conventional industrial gasifiers
+            are often hindered by their large size, high cost, and issues like tar formation or feedstock
+            blockages.
+        </p>
+        <p>
+            Sharma’s research introduces a new construction principle for gasifiers. By inverting the
+            traditional causality chain—viewing the gasification process not as a result of oxygen lack,
+            but as the origin of lower oxygen consumption—designers can implement abundant air inlets to
+            create a larger, more homogeneous reaction zone.
+        </p>
     </section>
 
     <section id="performance">
         <h2>Technical Excellence & Performance</h2>
         <ul>
             <li><strong>Compact Prototype:</strong> 150 cm tall unit made of stainless steel.</li>
-            <li><strong>High Power Density:</strong> 10 MW/m³; a 5-liter reactor (~size of a small pressure cooker) produces 50 kW thermal output.</li>
-            <li><strong>Versatile Feedstock:</strong> Handles wood pellets, straw pellets, and non-pelletized green waste from University sites.</li>
-            <li><strong>Sustainability:</strong> Can reduce CO₂ emissions by 85% compared to fossil fuel alternatives, promoting a circular economy.</li>
+            <li><strong>High Power Density:</strong> 10 MW/m³; a 5-liter reactor produces 50 kW thermal output.</li>
+            <li><strong>Versatile Feedstock:</strong> Handles pellets and non-pelletized green waste.</li>
+            <li><strong>Sustainability:</strong> Up to 85% CO₂ reduction versus fossil fuels.</li>
         </ul>
     </section>
 
     <section id="future">
         <h2>Future Outlook: 24/7 Clean Energy</h2>
-        <p>The significance of this technology extends beyond mere waste conversion. The research proposes a <strong>Future Energy Park</strong>—an R&D hub integrating solar concentration and gasification. The system can operate 24/7: utilizing solar energy by day and the high-flow gasifier by night.</p>
-        <p>This hybrid approach offers immediate applications for off-grid energy, district heating, and biochar production for carbon sequestration and soil enrichment.</p>
+        <p>
+            The research proposes a <strong>Future Energy Park</strong> integrating solar concentration
+            and gasification. Solar energy is used during the day, while the gasifier ensures night-time
+            energy generation.
+        </p>
+        <p>
+            Applications include off-grid energy, district heating, and biochar production for
+            carbon sequestration and soil enrichment.
+        </p>
     </section>
+
 </main>
 
 <footer>

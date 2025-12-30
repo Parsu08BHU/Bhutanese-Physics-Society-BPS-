@@ -37,12 +37,20 @@ ul {
     margin-left: 1.5rem;
 }
 
-img {
-    max-width: 100%;
+/* ✅ Project image styling (same as gasifier) */
+.project-image {
+    max-width: 65%;
     height: auto;
     display: block;
     margin: 1.5rem auto;
     border-radius: 8px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .project-image {
+        max-width: 90%;
+    }
 }
 </style>
 </head>
@@ -52,7 +60,11 @@ img {
 <header>
     <h1>Linear Mirror Solar Concentrator</h1>
     <p>High-Efficiency Solar Thermal System for Sustainable Energy</p>
-    <img src="images/Linear Mirror.jpg" alt="Linear Mirror Solar Concentrator">
+
+    <!-- ✅ Corrected image -->
+    <img src="images/Linear Mirror.jpg"
+         alt="Linear Mirror Solar Concentrator"
+         class="project-image">
 </header>
 
 <main>
@@ -81,10 +93,9 @@ img {
     <section id="applications">
         <h2>Applications</h2>
         <p>
-            The Linear Mirror Solar Concentrator is suitable for a wide range of renewable-energy-driven
-            applications, including greenhouse heating, biomass drying, district heating support,
-            and industrial thermal processes. When combined with biomass gasification, it enables
-            continuous and dispatchable clean energy generation.
+            The Linear Mirror Solar Concentrator is suitable for greenhouse heating, biomass drying,
+            district heating, and industrial thermal processes. When integrated with biomass
+            gasification, it enables continuous and dispatchable renewable energy.
         </p>
     </section>
 
